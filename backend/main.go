@@ -6,4 +6,12 @@ type Student struct {
  LastName string `json:"last_name"`
  Age int `json:"age"`
  Email string `json:"email"`
+ Email1 string `json:"email1"`
+
 }
+
+
+
+
+
+
