@@ -1,12 +1,22 @@
 package models
-import "gorm.io/gorm"
+
+import (
+	"encoding/json"
+
+	"gorm.io/gorm"
+)
 type Student struct {
  gorm.Model
  FirstName string `json:"first_name"`
  LastName string `json:"last_name"`
  Age int `json:"age"`
  Email string `json:"email"`
- Email1 string `json:"email111111111111111111111111111111111111111111111"`
+ Email1 json.RawMessage `json:"email111111111111111111111111111111111111111111111"`
+ //test 1234567890
+ ////////////////////
+
+ 
+
 
 }
 
